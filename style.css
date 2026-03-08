@@ -387,7 +387,7 @@ main{
     justify-content: space-between;
   }
   .card-category {
-    min-width: 220px;
+    min-width: 240px;
   }
   .card-img{
     min-width: 100%;
@@ -415,6 +415,6 @@ main{
     justify-content: space-between;
   }
   .card-trending{
-    min-width: 280px;
+    min-width: 300px;
   }
 }
