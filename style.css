@@ -346,9 +346,6 @@ main{
   .hamburger{
     display: none;
   }
-  .hamburger span{
-    display: none;
-  }
   .list-navbar{
     list-style: none;
     display: flex;

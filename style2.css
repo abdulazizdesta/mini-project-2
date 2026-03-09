@@ -143,3 +143,53 @@ header {
   margin-right: 10px;
 }
 /* HEADER END */
+
+/* FOOTER */
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 96px;
+}
+.icon-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.copyright {
+  color: var(--color-text-muted);
+  font-size: 11px;
+}
+.page-foot-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.page-foot-container a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+/* FOOTER END */
+
+/* STYLING TABLET-DESKTOP */
+@media (min-width: 768px) {
+
+  .hamburger{
+    display: none;
+  }
+  .list-navbar{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+  .list-navbar a{
+    transition: 0.3s ease-in-out;
+  }
+  .list-navbar a:hover{
+    color: blue;
+  }
+
+}
