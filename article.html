@@ -1,28 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DibiTech</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <style>
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: 0;
-        font-family: "Space Grotesk", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style2.css" />
   </head>
-<body>
-    <header>
+  <body>
+    <header class="z-50">
       <div class="box-logo">
         <img
           class="logo"
@@ -34,7 +27,7 @@
       <nav class="navbar">
         <ul class="list-navbar">
           <li class="list-item-navbar">
-            <a class="poin-navbar" href="home.html">Home</a>
+            <a class="poin-navbar" href="index.html">Home</a>
           </li>
           <li class="list-item-navbar">
             <a class="poin-navbar" href="about.html">About</a>
@@ -51,7 +44,7 @@
         </button>
         <ul class="list-navbar-mobile" id="list-navbar-mobile">
           <li class="list-item-navbar-mobile">
-            <a class="poin-navbar" href="home.html">Home</a>
+            <a class="poin-navbar" href="index.html">Home</a>
           </li>
           <li class="list-item-navbar-mobile">
             <a class="poin-navbar" href="about.html">About</a>
@@ -62,14 +55,109 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Blog & Article</h1>
-      <div class="sort-container">
-        <select class="" name="" id="">
-          <option class="" value="1">Option 1</option>
-          <option class="" value="2">Option 2</option>
-        </select>
-      </div>
+    <main class="m-6">
+      <section class="article-banner">
+        <div
+          class="relative bg-[url(./assets/article-banner.jpg)] border-0 rounded-md bg-cover bg-center bg-no-repeat min-h-48 flex items-center justify-center text-center shadow-md shadow-cyan-500/30 before:absolute before:inset-0 before:bg-black/60 before:min-h-48 before:border-0 before:rounded-md"
+        >
+          <div class="relative z-10">
+            <h1 class="text-primary-color text-3xl">Blog & Article</h1>
+            <p class="text-secondary-color text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <div
+          class="flex items-center gap-2 bg-white/10 rounded-full my-8 px-4 py-2 transition-all duration-300 focus-within:scale-102 focus-within:ring-2 focus-within:ring-white/50"
+        >
+          <input
+            type="text"
+            placeholder="Cari artikel..."
+            class="bg-transparent outline-none text-white placeholder-white/50 w-full"
+          />
+          <button>
+            <box-icon name="search" color="white"></box-icon>
+          </button>
+        </div>
+      </section>
+      <h2 class="text-lg text-secondary-color mb-4">Recomendation</h2>
+      <section
+        class="article-list grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4"
+      >
+        <article class="flex gap-5">
+          <img
+            src="./assets/article-1.jpg"
+            alt="thumbnail artikel"
+            class="max-w-35 rounded-md"
+          />
+          <div class="info-container">
+            <p class="text-primary-color mb-1">Productivity</p>
+            <a href="#" class="text-sky-400 mb-2 hover:text-white">
+              10 Best AI Tools to Increase Work Productivity in 2026
+            </a>
+            <div class="flex items-center gap-2 mt-auto">
+              <span class="text-white/40 text-xs">John Doe</span>
+              <span class="text-white/20 text-xs">•</span>
+              <span class="text-white/40 text-xs">12 Jan 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex gap-5">
+          <img
+            src="./assets/article-2.jpg"
+            alt="thumbnail artikel"
+            class="max-w-35 rounded-md"
+          />
+          <div class="info-container">
+            <p class="text-primary-color mb-1">Productivity</p>
+            <a href="#" class="text-sky-400 mb-2 hover:text-white">
+              How to Use ChatGPT for More Effective Time Management
+            </a>
+            <div class="flex items-center gap-2 mt-auto">
+              <span class="text-white/40 text-xs">John Doe</span>
+              <span class="text-white/20 text-xs">•</span>
+              <span class="text-white/40 text-xs">12 Jan 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex gap-5">
+          <img
+            src="./assets/article-3.svg"
+            alt="thumbnail artikel"
+            class="max-w-35 rounded-md"
+          />
+          <div class="info-container">
+            <p class="text-primary-color mb-1">Code</p>
+            <a href="#" class="text-sky-400 mb-2 hover:text-white">GitHub Copilot vs Cursor</a>
+            <div class="flex items-center gap-2 mt-auto">
+              <span class="text-white/40 text-xs">John Doe</span>
+              <span class="text-white/20 text-xs">•</span>
+              <span class="text-white/40 text-xs">12 Jan 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex gap-5">
+          <img
+            src="./assets/article-4.jpg"
+            alt="thumbnail artikel"
+            class="max-w-35 rounded-md"
+          />
+          <div class="info-container">
+            <p class="text-primary-color mb-1">Design</p>
+            <a href="#" class="text-sky-400 mb-2 hover:text-white">
+              Midjourney or Adobe Firefly
+            </a>
+            <div class="flex items-center gap-2 mt-auto">
+              <span class="text-white/40 text-xs">John Doe</span>
+              <span class="text-white/20 text-xs">•</span>
+              <span class="text-white/40 text-xs">12 Jan 2026</span>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
