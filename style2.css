@@ -69,6 +69,17 @@ header {
   gap: 15px;
   align-items: center;
 }
+.logo-1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.logo-text {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  font-size: var(--fs-md);
+  text-align: center;
+}
 .box-logo {
   display: flex;
   gap: 20px;
