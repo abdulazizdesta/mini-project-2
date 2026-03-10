@@ -14,33 +14,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
-  <body class="bg-color-[rgb(18, 20, 33)]">
-    <main class="min-h-[100vh] flex items-center p-8">
+  <body class="bg-gradient-to-br from-[#121421] via-[#1c1a2e] to-[#0e1020]">
+    <main class="min-h-[100vh] flex items-center justify-center p-8">
       <div
-        class="container-login p-4 bg-indigo-50/20 outline-1 outline-offset-1 outline-white shaodow-lg shadow-sky-500/70 rounded-md min-w-3/4 min-h-[400px] flex justify-center flex-col items-center"
+        class="p-4 bg-indigo-50/20 ring-1 ring-white/10 shadow-lg shadow-sky-500/20 rounded-[25px] min-w-[350px] min-h-[400px] flex justify-center flex-col items-center md:min-w-[400px]"
       >
         <img
           class="logo shadow-sm shadow-sky-500 max-w-[45px] rounded-full mb-4"
           src="https://img.freepik.com/premium-vector/letter-d-logo-icon-design-template_487414-4337.jpg"
           alt=""
         />
-        <div class="welcome-login">
+        <div class="welcome-login flex flex-col max-w-[80%]">
           <h1 class="text-white text-2xl font-bold text-center mb-2">
             Welcome Back
           </h1>
           <p class="text-sm text-secondary-color text-center mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div class="input-container">
-          <div class="flex flex-col gap-1">
+        <div class="md:min-w-[70%]">
+          <div class="flex flex-col gap-1 mb-4">
             <label for="email" class="text-xs text-white/50">Email</label>
             <input
               id="email"
               type="email"
               required
               placeholder="Your email"
-              class="p-2 mb-4 bg-indigo-950 rounded-[10px] w-full outline-none text-white text-sm placeholder-white/50 border border-white/10 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+              class="p-2 bg-indigo-950 rounded-[10px] w-full outline-none text-white text-sm placeholder-white/50 border border-white/10 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
             />
           </div>
 
@@ -55,30 +55,17 @@
             />
           </div>
           <div
-            class="input-2-container flex gap-5 justify-between items-center w-full mt-4"
+            class="input-2-container flex gap-5 justify-end items-center w-full mt-1 mb-8"
           >
-            <div class="flex items-center">
-              <input type="checkbox" id="remember-me" />
-              <label for="remember-me"
-                ><a class="pl-1 text-blue-400 text-xs" href="#"
-                  >Remember Password</a
-                ></label
-              >
-            </div>
-
-            <a class="pl-2 text-blue-400 text-xs" href="#">Forgot password?</a>
+            <a class="pl-2 text-blue-400 text-[10px]" href="#">Forgot your password?</a>
           </div>
-          <div
-            class="button-container w-full bg-blue-700 p-2 my-4 rounded-md text-center text-md font-bold text-white transition duration-150 ease-in hover:scale-105 hover:bg-blue-950"
-          >
-            <button>Login</button>
-          </div>
+            <button class="button-container w-full bg-blue-700 p-2 my-2 rounded-md text-center text-md font-bold text-white transition duration-150 ease-in hover:scale-105 hover:bg-blue-950">Login</button>
           <div class="platform-login">
-            <p class="mt-12 text-sm text-white text-center">Or Sign in With</p>
+            <p class="mt-8 text-sm text-white text-center">Or Sign in With</p>
             <div class="flex gap-12 justify-center mt-6 mb-8">
               <button
                 id="login-google"
-                class="max-w-[45px] rounded-full shadow-sm shadow-sky-50"
+                class="max-w-[45px] rounded-full shadow-sm shadow-sky-50 transition duration-150 hover:scale-105"
               >
                 <img
                   class="rounded-full"
@@ -86,17 +73,17 @@
                   alt=""
                 />
               </button>
-              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50">
+              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50 transition duration-150 hover:scale-105">
                 <img
                   class="rounded-full"
                   src="./assets/apple-logo.png"
                   alt=""
                 />
               </button>
-              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50">
+              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50 transition duration-150 hover:scale-105">
                 <img
                   class="rounded-full"
-                  src="./assets/logo-google.png"
+                  src="./assets/microsoft-logo.png"
                   alt=""
                 />
               </button>
