@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DibiTech</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,29 +15,101 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body class="bg-color-[rgb(18, 20, 33)]">
-    <main class="flex items-center justify-center">
-      <div class="container-login bg-indigo-50/50 shaodow-lg shadow-sky-500/50 rounded-md min-w-3/4 h-[300px] items-center">
-          <img
-          class="logo shadow-md shadow-sky-500"
+    <main class="min-h-[100vh] flex items-center p-8">
+      <div
+        class="container-login p-4 bg-indigo-50/20 outline-1 outline-offset-1 outline-white shaodow-lg shadow-sky-500/70 rounded-md min-w-3/4 min-h-[400px] flex justify-center flex-col items-center"
+      >
+        <img
+          class="logo shadow-sm shadow-sky-500 max-w-[45px] rounded-full mb-4"
           src="https://img.freepik.com/premium-vector/letter-d-logo-icon-design-template_487414-4337.jpg"
           alt=""
         />
         <div class="welcome-login">
-            <h1>Welcome Back</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam consequuntur molestias neque reiciendis incidunt.</p>
+          <h1 class="text-white text-2xl font-bold text-center mb-2">
+            Welcome Back
+          </h1>
+          <p class="text-sm text-secondary-color text-center mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </div>
         <div class="input-container">
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-xs text-white/50">Email</label>
             <input
-            type="email"
-            required
-            placeholder="name@email.com"
-            class="bg-indigo-950 outline-none text-white placeholder-white/50"
-          />
-          <input
-            type="password"
-            required
-            class="bg-blue-500 outline-none text-white placeholder-white/50"
-          />
+              id="email"
+              type="email"
+              required
+              placeholder="Your email"
+              class="p-2 mb-4 bg-indigo-950 rounded-[10px] w-full outline-none text-white text-sm placeholder-white/50 border border-white/10 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="password" class="text-xs text-white/50">Password</label>
+            <input
+              id="password"
+              type="password"
+              required
+              placeholder="••••••••"
+              class="p-2 bg-indigo-950 rounded-[10px] w-full outline-none text-white text-sm placeholder-white/50 border border-white/10 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+            />
+          </div>
+          <div
+            class="input-2-container flex gap-5 justify-between items-center w-full mt-4"
+          >
+            <div class="flex items-center">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me"
+                ><a class="pl-1 text-blue-400 text-xs" href="#"
+                  >Remember Password</a
+                ></label
+              >
+            </div>
+
+            <a class="pl-2 text-blue-400 text-xs" href="#">Forgot password?</a>
+          </div>
+          <div
+            class="button-container w-full bg-blue-700 p-2 my-4 rounded-md text-center text-md font-bold text-white transition duration-150 ease-in hover:scale-105 hover:bg-blue-950"
+          >
+            <button>Login</button>
+          </div>
+          <div class="platform-login">
+            <p class="mt-12 text-sm text-white text-center">Or Sign in With</p>
+            <div class="flex gap-12 justify-center mt-6 mb-8">
+              <button
+                id="login-google"
+                class="max-w-[45px] rounded-full shadow-sm shadow-sky-50"
+              >
+                <img
+                  class="rounded-full"
+                  src="./assets/logo-google.png"
+                  alt=""
+                />
+              </button>
+              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50">
+                <img
+                  class="rounded-full"
+                  src="./assets/apple-logo.png"
+                  alt=""
+                />
+              </button>
+              <button class="max-w-[45px] rounded-full shadow-sm shadow-sky-50">
+                <img
+                  class="rounded-full"
+                  src="./assets/logo-google.png"
+                  alt=""
+                />
+              </button>
+            </div>
+            <p class="text-sm text-white/50 text-center mb-4">
+              Don't have an account?
+              <a
+                href="#"
+                class="text-indigo-400 hover:text-indigo-300 transition-colors"
+                >Sign Up</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </main>
