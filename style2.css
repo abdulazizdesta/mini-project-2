@@ -58,6 +58,7 @@ header {
   border-bottom: solid white 1px;
   position: relative;
   position: sticky;
+  z-index: 50;
   top: 0;
   left: 0;
   background-color: var(--color-primary);

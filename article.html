@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <header class="z-50">
+    <header>
       <div class="box-logo">
         <img
           class="logo"
@@ -36,7 +36,7 @@
             <a class="poin-navbar" href="article.html">Article</a>
           </li>
         </ul>
-        <button class="btn-login">Login</button>
+        <button onclick="window.location.href='login.html'" class="btn-login">Login</button>
         <button class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -74,7 +74,7 @@
         >
           <input
             type="text"
-            placeholder="Cari artikel..."
+            placeholder="Search an article..."
             class="bg-transparent outline-none text-white placeholder-white/50 w-full"
           />
           <button>
