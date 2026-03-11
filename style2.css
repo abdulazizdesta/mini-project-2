@@ -4,7 +4,7 @@
   --color-primary: rgb(18, 20, 33);
   --color-secondary: rgb(57, 61, 86);
   --color-text: rgba(255, 255, 255, 1);
-  --color-text-muted: rgba(145, 156, 201, 1);
+  --color-text-secondary: rgba(145, 156, 201, 1);
 
   /* Typography */
   --font-main: "Space Grotesk", sans-serif;
@@ -42,10 +42,10 @@ body {
   color: var(--color-text);
 }
 .text-secondary-color {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 }
 .-semi-white {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 }
 
 /* HEADER */
@@ -161,7 +161,7 @@ header {
   gap: 4px;
 }
 .copyright {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   font-size: 11px;
 }
 .page-foot-container {
@@ -172,7 +172,7 @@ header {
   margin-bottom: 12px;
 }
 .page-foot-container a {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   text-decoration: none;
 }
 /* FOOTER END */
