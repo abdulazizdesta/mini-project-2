@@ -52,18 +52,18 @@
     <main class="m-6 md:m-10">
       <section class="article-banner">
         <div
-          class="relative bg-[url(./assets/article-banner.jpg)] border-0 rounded-md bg-cover bg-center bg-no-repeat min-h-48 md:min-h-96 lg:min-h-[480px] flex items-center justify-center text-center shadow-md shadow-cyan-500/30 before:absolute before:inset-0 before:bg-black/60 before:min-h-48 before:border-0 before:rounded-md"
+          class="relative bg-[url(./assets/article-banner.jpg)] border-0 rounded-md bg-cover bg-center bg-no-repeat min-h-48 md:min-h-96 lg:min-h-[480px] flex items-center justify-center text-center shadow-md shadow-cyan-500/30"
         >
-          <div class="relative z-10">
-            <h1 class="text-primary-color text-3xl md:text-[96px]">Blog & Article</h1>
-            <p class="text-secondary-color text-xs md:text-[24px]">
+          <div class="z-10">
+            <h1 class="text-blue-950 text-3xl md:text-[96px]">Blog & Article</h1>
+            <p class="text-blue-950 text-xs md:text-[24px]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
         </div>
       </section>
       <section class="search md:flex md:gap-6 md:justify-between">
-        <div
+        <form
           class="flex items-center gap-2 bg-white/10 rounded-full my-8 px-4 py-2 transition-all duration-300 focus-within:scale-102 focus-within:ring-2 focus-within:ring-white/50 lg:min-w-1/2"
         >
           <input
@@ -74,8 +74,8 @@
           <button>
             <box-icon name="search" color="white"></box-icon>
           </button>
-        </div>
-        <div class="flex gap-3 justify-between md:py-8 lg:gap-6">
+        </form>
+        <form class="flex gap-3 justify-between md:py-8 lg:gap-6">
           <!-- Filter Topik -->
           <select
             class="bg-white/10 text-center text-white text-sm px-2 py-2 rounded-full border border-white/20 outline-none cursor-pointer hover:bg-white/20 focus:ring-2 focus:ring-white/30 transition-all duration-300"
@@ -105,7 +105,7 @@
             <option value="2026" class="bg-[#121421]">2026</option>
             <option value="2025" class="bg-[#121421]">2025</option>
           </select>
-        </div>
+        </form>
       </section>
       <h2
         class="text-lg text-secondary-color mt-6 mb-3 md:text-3xl md:mb-8 lg:text-4xl"
